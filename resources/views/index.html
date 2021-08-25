@@ -10,8 +10,8 @@
 </head>
 <body>
 <div class="container">
-    <header class="col-12" style="height: 70px;display: flex;justify-content: center;margin-top: 10px">
-        <a href="form.html" class="btn btn-primary" style="height: 40px">add product</a>
+    <header class="col-12" style="height: 80px;display: flex;justify-content: center;margin-top: 15px">
+        <a href="form.html" class="btn btn-primary" style="height: 50px">add product</a>
     </header>
     <hr>
     <div class="content row">
@@ -30,17 +30,17 @@
                 console.log(data)
                 var result = data
                 for (let i = 0; i < result.length; i++) {
-                    $('.content').append(`<div class="col-4" style="padding: 5px ; border: 1px #c6c6c6 solid">
-            <img src="${result[i].thumbnail}" alt="" style="height: 250px;width: 100%;object-fit: cover">
+                    $('.content').append(`<div class="col-4" style="padding: 8px ; border: 1px #303030 solid">
+            <img src="${result[i].thumbnail}" alt="" style="height: 230px;width: 100%;object-fit: cover">
             <br>
             <h2>${result[i].name}</h2>
-            <p style="color: red;font-size: 25px">price : $ ${result[i].price} </p>
-            <button class="btn btn-primary" style="width: 130px">Buy</button>
+            <p style="color: red;font-size: 35px">price : $ ${result[i].price} </p>
+            <button class="btn btn-primary" style="width: 180px">Buy</button>
         </div>`)
                 }
             },
             error:function (){
-                alert('Không tìm thấy cơ sở dữ liệu!')
+                alert('Không tìm thấy cơ sở dữ liệu')
             }
         })
     })
