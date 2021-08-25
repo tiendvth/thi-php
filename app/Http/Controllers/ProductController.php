@@ -22,8 +22,8 @@ class ProductController extends Controller
         $product->save();
         return   response()->json(
             [
-                'code'=>201,
-                'message'=>'tạo mới sản phẩm thành công'
+                'code'=>401,
+                'message'=>'successful new creation'
             ]
         );
     }
